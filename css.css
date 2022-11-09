@@ -1,0 +1,111 @@
+*{margin:0;padding:0;}
+
+@font-face{
+    font-family: tronLike;
+    src: url('Orbitron.ttf')
+}
+
+mark{
+    background: black;
+    color: #dbe5f2;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+body{
+    background: black;
+    padding: 100px 0;
+    overflow-x: hidden;
+}
+
+#overblur{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    backdrop-filter: blur(0.6px);
+    background: black;
+    opacity: 10%;
+}
+
+.red{
+    color: #ee4323;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+    color: #dbe5f2;
+    font-family: tronLike;
+}
+
+.content > div{
+    padding: 15px;
+    margin-top: 100px;
+    width: 75%;
+    border-style: inset;
+    border: 7.5px solid #dbe5f2;
+    border-radius: 3px;
+}
+
+.contDivRight{
+    margin: 0 0px 0 auto;
+}
+
+h1, h2, h3{
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.sectHeader{
+    margin-top: -50px;
+    color: #ee4323;
+    padding: 0 15px;
+}
+
+.sectFooter{
+    margin-bottom: -25px;
+    font-size: 2em;
+    padding: 0 15px;
+}
+
+.sectHeader > mark{
+    margin-right: -15px;
+}
+
+.sectFooter > mark{
+    margin-left: -15px;
+}
+
+.sect1 h1, .sect2 h1{
+    text-align: right;
+    color: #ee4323!important;
+}
+
+.video{
+    width: 100%;
+    height: 25vh;
+    position: relative;
+}
+
+.video > iframe, .video > img{
+    border: 10px solid #ee4323;
+    height: 100%;
+    width: 44.44vh;
+    position: absolute;
+    right: 0;
+}
+
+.sect2 .video {
+    pointer-events: none;
+}
+
+.raiseUp{
+    margin-top: -25.5vh;
+}
+
+.sect2 h1{
+    padding-bottom: 25px;
+}
